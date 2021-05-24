@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: matrixcalc_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/matrixcalc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/matrixcalc/matrixcalc_{{ version }}.tar.gz
   sha256: 17e6caeeecd596b850a6caaa257984398de9ec5d2b41ce83c428f112614b9cb0
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
   number: 1003
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,14 +35,15 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=matrixcalc
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: A collection of functions to support matrix calculations for probability, econometric
     and numerical analysis. There are additional functions that are comparable to APL
     functions which are useful for actuarial models such as pension mathematics. This
     package is used for teaching and research purposes at the Department of Finance
     and Risk Engineering, New York University, Polytechnic Institute, Brooklyn, NY 11201.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
@@ -51,9 +51,3 @@ extra:
     - MathiasHaudgaard
     - FrodePedersen
     - ArneKr
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
