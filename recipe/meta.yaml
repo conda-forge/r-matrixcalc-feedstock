@@ -1,4 +1,4 @@
-{% set version = "1.0-4" %}
+{% set version = "1.0-5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/matrixcalc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/matrixcalc/matrixcalc_{{ version }}.tar.gz
-  sha256: 94c5831104a6c501ad8436039ff1ddb871fc79e85b1073e9ac497fce1dd2a045
+  sha256: 5906e1ef06dbc18efc7a4b370adc180ef8941b5438119703bd981d1c76a06fca
 
 build:
   merge_build_host: true  # [win]
