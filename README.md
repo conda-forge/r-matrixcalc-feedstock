@@ -1,11 +1,11 @@
-About r-matrixcalc
-==================
+About r-matrixcalc-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-matrixcalc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=matrixcalc
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-matrixcalc-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of functions to support matrix calculations for probability, econometric and numerical analysis. There are additional functions that are comparable to APL functions which are useful for actuarial models such as pension mathematics. This package is used for teaching and research purposes at the Department of Finance and Risk Engineering, New York University, Polytechnic Institute, Brooklyn, NY 11201.
 
